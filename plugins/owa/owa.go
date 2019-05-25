@@ -72,7 +72,7 @@ func OwaHandler(h http.HandlerFunc) http.HandlerFunc {
 						r, forward.ResponseModifier(addOtp))
 					h(w, req)
 
-				} else if req.Method == "POST" && strings.HasPrefix(req.RequestURI, "/owa/auth/logon.aspx") {
+				} else if req.Method == "POST" && strings.HasPrefix(req.RequestURI, "/owa/auth.owa") {
 					var bodyBytes []byte
 					if req.Body != nil {
 						bodyBytes, _ = ioutil.ReadAll(req.Body)
