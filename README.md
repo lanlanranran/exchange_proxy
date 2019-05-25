@@ -1,5 +1,7 @@
 ## Exchange_proxy
 
+适配Exchange 2019
+
 Exchange_proxy是由go语言开发的Exchange安全代理，可以将内网的Exchange服务器的https服务安全地发布出去，
 支持的功能如下：
 
